@@ -16,17 +16,19 @@ s1.addEventListener("mouseleave",function(){
 
 
 s2.addEventListener("mouseenter",function(){
-    if(c==0){
-        s2.style.backgroundColor="yellow";
-        c++;
-    }
-    else{
-        s2.style.backgroundColor="green";
-        c--;
-    }  
+    if(c == 0){
+    s2.style.backgroundColor = "#00fff5";  /* neon cyan */
+    c++;
+}
+else{
+    s2.style.backgroundColor = "#ff2d78";  /* hot pink */
+    s2.innerHTML="<h1>Debasish</h1>";
+    c--;
+}
 })
 s2.addEventListener("mouseleave",function(){
-    s2.style.backgroundColor="white";
+    s2.style.backgroundColor="transparent";
+    s2.innerHTML="<h1>2</h1>";
 })
 
 
@@ -37,7 +39,7 @@ s3.addEventListener("mouseenter",function(){
     
 })
 s3.addEventListener("mouseleave",function(){
-    s3.style.backgroundColor="white";
+    s3.style.backgroundColor="transparent";
 })
 
 
@@ -52,7 +54,7 @@ s4.addEventListener("click",function(){
     
 })
 s4.addEventListener("mouseleave",function(){
-    s1.style.backgroundColor="white";
-    s2.style.backgroundColor="white";
-    s3.style.backgroundColor="white";
+    s1.style.backgroundColor="transparent";
+    s2.style.backgroundColor="transparent";
+    s3.style.backgroundColor="transparent";
 })
